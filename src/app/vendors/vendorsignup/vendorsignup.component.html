@@ -1,0 +1,33 @@
+<div class="main">
+    <div class="parent">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-left">
+                <div class="input-main">
+                    <h5>ecommy</h5>
+                    <h2>Hello,</h2>
+                    <form class="input" [formGroup]="signupForm" (ngSubmit)="onLogin()">
+                        <input type="text" placeholder="Enter your name" formControlName="name" required>
+                        <br>
+                        <input type="text" placeholder="Enter your mobile number" formControlName="mobile" required>
+                        <br>
+                        <input type="text" placeholder="Enter your email" formControlName="email" required>
+                        <br>
+                        <input type="text" placeholder="Enter your password" formControlName="password" required>
+                        <br>
+                        <input type="text" placeholder="Enter your place and country" formControlName="country" required>
+                        <br>
+                        <input type="text" placeholder="Enter your branch" formControlName="branch" required>
+                        <br>
+                        <span *ngIf="signupForm.invalid && signupForm.touched">The form is invalid!</span>
+                        <br>
+                        <button type="submit" [disabled]="!signupForm.valid">LogIn</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-right">
+                <img src="assets/z.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+

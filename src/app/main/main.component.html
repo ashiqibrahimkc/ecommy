@@ -1,0 +1,75 @@
+<div class="main">
+    <div class="main-nav">
+        <div class="nav">
+            <div class="container-fluid">
+                <div class="fl">
+                    <div class="nav-left">
+                        <div class="logo">ecommy</div>
+                    </div>
+                    <div class="nav-right">
+                        <div class="search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <input type="text" placeholder="search products.....">
+                        </div>
+                       <div class="right-icon">
+                            <div class="user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <ul>
+                                    <li routerLink="/profile">My Profile</li>
+                                    <li>Orders</li>
+                                    <li routerLink="/vendorlogin">Sell Product</li>
+                                </ul>
+                            </div>
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart" (click)="onCart()" aria-hidden="true"></i>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="second-search">
+                    <div class="search1">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" placeholder="search products.....">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="category">
+            <ul>
+                <li class="all" (click)="showmenu()"><i class="fa fa-bars" aria-hidden="true"></i>  All</li>
+                <li (click)="onhome()">Mobiles</li>
+                <li (click)="onfresh()">Fresh</li>
+                <li>Fashion</li>
+                <li>Electronics</li> 
+            </ul>
+        </div>
+        <!-- -------------------------sidebar-------------------- -->
+        <div class="side-bar" [ngClass]="{'visible':isvisible}">
+            <div class="close-menu"><i class="fa fa-times" id="close-side" (click)="hidemenu()"></i></div>
+            <div class="side-main">
+                <ul>
+                    <li></li>
+                    <li routerLink="/cart"><i class="fa fa-shopping-cart"></i> Cart</li>
+                    <li></li>
+                    <li></li>
+                    <li class="logout" routerLink="/vendorlogin"><i class="fa fa-sign-out"></i> Log Out</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <router-outlet></router-outlet>
+    </div>
+    <section class="footer">
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Easy contact <br>All Rights are Reserved by Ecommy</p>
+            
+    </section>
+</div>

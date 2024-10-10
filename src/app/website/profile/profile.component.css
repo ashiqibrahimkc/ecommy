@@ -1,0 +1,32 @@
+.user i,h2,h3{
+    display: flex;
+    justify-content: center;
+    
+    /* border: 1px solid black; */
+    /* border-radius: 50%; */
+    /* padding:10%; */
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+ i{
+    padding: 3%;
+    font-size: 50px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+.card{
+    max-width: 500px;
+}
+.container-fluid{
+    display: flex;
+    justify-content: center;
+}

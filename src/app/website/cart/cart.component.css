@@ -1,0 +1,30 @@
+h1{
+    color: rgb(26, 25, 25);
+    text-align: center;
+    margin-top: 2%;
+}
+.cart-product{
+    display: flex;
+    gap: 2%;
+    border: 1px solid black;
+    background-color: rgb(240, 236, 236);
+    border-radius: 1%;
+    
+}
+.main{
+    background-color: black;
+}
+.main h3{
+    color: gray;
+}
+.place{
+    display: flex;
+    /* justify-content: end; */
+    float: right;
+}
+.total-price{
+    padding: 2%;
+}
+.product-list{
+    padding: 2%;
+}

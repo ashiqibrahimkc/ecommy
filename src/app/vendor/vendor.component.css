@@ -1,0 +1,42 @@
+.nav-main{
+    background-color: rgb(31, 30, 30);
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+
+    margin-right: 5%;
+}
+.logo{
+    color: grey;
+    font-size: 20px;
+    font-weight: 700;
+}
+.category{
+    color: grey;
+    font-size: 18px;
+    font-weight:500;
+    cursor: pointer;
+}
+.product{
+    color: grey;
+    font-size: 18px;
+    font-weight:500;
+    cursor: pointer;    
+}
+.orders{
+    color: grey;
+    font-size: 18px;
+    font-weight:500;  
+    cursor: pointer;
+    /* margin-right: 10%; */
+}

@@ -1,0 +1,143 @@
+.main{
+	margin: 0;
+	padding: 0;
+}
+.parent{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+input.ng-invalid.ng-touched {
+	border: 1px solid red;
+  }
+.signup{
+	font-size: 15px;
+	
+	border: none;
+	color: rgb(3, 3, 196);
+	font-weight: 900;
+	
+}
+
+.signup:hover{
+	cursor: pointer;
+}
+.signup-container{
+	display: flex;
+	/* align-items: center; */
+	justify-content: start;
+	gap: 51%;
+	margin-top: 2%;
+}
+.input-main h4{
+	
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 700;
+}
+.input-main h2{
+	font-size: 28px;
+	font-weight: 900;
+}
+.input input{
+	/* border: 1px solid black; */
+	border-radius: 5px;
+	width: 500px;
+	padding: 2%;
+	margin-top: 2%;
+}
+.input button{
+	text-align: center;
+	margin-top: 1%;
+	padding: 2.5%;
+	width: 500px;
+	border-radius: 5px;
+	background-color: rgb(3, 3, 196);
+	border: none;
+	color: white;
+	font-size: 16px;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.col-right img{
+	height: 500px;
+	width: 700px;
+	border-radius: 10px;
+	
+}
+span{
+	color: red;
+}
+.col-left{
+	margin-top: 5%
+}
+@media (max-width:1500px){
+	.col-right img{
+		height: 400px;
+		width: 600px;
+	
+	}
+	.col-left{
+		margin-top: 3%
+	}
+	.signup-container{
+		
+		gap: 55%;
+	}
+}
+@media (max-width:1280px){
+	.col-right img{
+		height: 300px;
+		width: 500px;
+	
+	}
+	.col-left{
+		margin-top:0%
+	}
+	.signup-container{
+		
+		gap: 61%;
+	}
+}
+@media (max-width:1160px){
+	.col-right img{
+		display: none;
+	
+	}
+	.signup{
+		color: white;
+	}
+	.signup-container{
+		
+		gap: 120%;
+	}
+	.row{
+		background-color:rgba(245, 115, 115, 0.5);
+		padding: 10%;
+		border-radius: 50px;
+	}
+	
+	
+}
+@media (max-width:768px){
+	
+	.input input{
+		width: 300px;
+	}
+	.input button{
+		width: 300px;
+	}
+	.signup-container{
+		
+		gap: 33%;
+	}
+}
+@media (max-width:350px){
+	
+	.input input{
+		width: 250px;
+	}
+	.input button{
+		width: 250px;
+	}
+}

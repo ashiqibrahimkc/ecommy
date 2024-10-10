@@ -1,0 +1,46 @@
+<div>
+    <h1> Your Cart</h1>
+    <div class="cart-main">
+       <div class="container">
+            <div class="card">
+                    <div class="card-header main">
+                      <h3>  Products</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-9 col-xl-9 col-sm-12 col-md-12 product-list">
+                            <div class="card product-card" *ngFor="let product of products">
+                                <div class="cart-product" >
+                                    <div class="cart-img">
+                                        <img [src]="product.img" alt="" style="width: 100px;height: 100px;border-radius: 50%;">
+                                    </div>
+                                    <div class="cart-details">
+                                        <h3>{{product.name}}</h3>
+                                        <h5> ₹ {{product.price}} </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-3 col-sm-12 col-md-12 total-price">
+                            <div class="card" >
+                                <div class="card-header main">
+                                    <h3>Price Details</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Price:</p>
+                                    <p>Discount:</p>
+                                </div>
+                                <div class="card-footer">
+                                    <h5>TOTAL AMOUNT:₹</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary place">
+                            Place Order
+                        </button>
+                    </div>
+            </div>
+       </div>
+    </div>
+</div>

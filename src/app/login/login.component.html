@@ -1,0 +1,29 @@
+<div class="main">
+    <div class="parent">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-left">
+                <div class="input-main">
+                    <h5>ecommy</h5>
+                    <h2>Hello,<br>Welcome Back.</h2>
+                    <form class="input" [formGroup]="signinForm" (ngSubmit)="onLogin()" >
+                        <input type="text" [(ngModel)]="user.email" placeholder="Enter email" formControlName="email" required>
+                        <br>
+                        <input type="text" [(ngModel)]="user.password" placeholder="Enter password" formControlName="password" required>
+                        <br>
+                        <span *ngIf="signinForm.invalid && signinForm.touched">The form is invalid!</span>
+                        <br>
+                        <button type="submit" [disabled]="!signinForm.valid">LogIn</button>
+                    </form>
+                    <div class="signup-container">
+                        <h4 class="signup">forgetpassword?</h4>
+                        <h4 class="signup" (click)="onSignup()">SignUp</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-right">
+                <img src="assets/user.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
