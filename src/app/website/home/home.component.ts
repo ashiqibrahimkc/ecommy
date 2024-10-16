@@ -7,8 +7,7 @@ import { Router } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit{
-  more:boolean=false;
-  category:boolean=false;
+  
   productlist:any[];
   constructor(private router:Router){
   }
@@ -26,11 +25,10 @@ this.router.navigate(['/home/mobile'])
   ];
   
   moreitems(){
-    this.more=!this.more;
-    this.productlist=this.more?this.product:this.product.slice(0,4)
    
+    this.router.navigate(['product'])
   }
   morecategory(){
-    this.category=!this.category;
+    this.router.navigate(['product'])
   }
 }

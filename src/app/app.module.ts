@@ -20,6 +20,13 @@ import { CustomersComponent } from './vendors/customers/customers.component';
 import { AddproductComponent } from './vendors/addproduct/addproduct.component';
 import { ProfileComponent } from './website/profile/profile.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EditComponent } from './website/edit/edit.component';
+import { AddprofileComponent } from './website/addprofile/addprofile.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,13 +45,19 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     CustomersComponent,
     AddproductComponent,
     ProfileComponent,
+    EditComponent,
+   AddprofileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule
+    
   ],
   providers: [
     provideAnimationsAsync()

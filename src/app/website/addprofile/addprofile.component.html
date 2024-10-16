@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="main">
+        <div class="main-head">
+            <h1>Details</h1>
+            <i class="fa fa-times" (click)="closetab()"></i>
+        </div>
+        <div class="inputvalue">
+            <form [formGroup]="addform" (ngSubmit)="onsubmit()">
+            
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 colm">
+                        <div class="form-group">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Name</mat-label>
+                                <input matInput placeholder="--"
+                                formControlName="name">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Phone</mat-label>
+                                <input matInput placeholder="--"
+                                formControlName="phone">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Email</mat-label>
+                                <input matInput placeholder="--"
+                                formControlName="email">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Place</mat-label>
+                                <input matInput placeholder="--"
+                                formControlName="place">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <mat-form-field appearance="outline">
+                                <mat-label>District</mat-label>
+                                <input matInput placeholder="--"
+                                formControlName="district">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <mat-form-field appearance="outline">
+                                <mat-label>State</mat-label>
+                                <input matInput placeholder="--"
+                                formControlName="state">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Post</mat-label>
+                                <input matInput placeholder="--"
+                                formControlName="post">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Pincode</mat-label>
+                                <input matInput placeholder="--"
+                                formControlName="pincode">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn btn-success" [disabled]="!addform.valid">Save</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

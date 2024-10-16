@@ -15,7 +15,7 @@
                             <div class="user">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <ul>
-                                    <li routerLink="/profile">My Profile</li>
+                                    <li (click)="openprofile()">My Profile</li>
                                     <li>Orders</li>
                                     <li routerLink="/vendorlogin">Sell Product</li>
                                 </ul>
@@ -58,9 +58,11 @@
             </div>
         </div>
     </div>
-    <div class="center">
-        <router-outlet></router-outlet>
-    </div>
+    
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+   
     <section class="footer">
 
         <div class="icons">

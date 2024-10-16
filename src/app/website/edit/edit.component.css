@@ -1,0 +1,11 @@
+.body{
+    padding: 5%;
+}
+.buttons{
+    display: flex;
+    justify-content: end;
+    gap: 3%;
+}
+.main{
+    padding: 2%;
+}

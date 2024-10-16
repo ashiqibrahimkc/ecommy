@@ -1,10 +1,14 @@
+
 <div class="container">
+  <div class="products">
+    <h1>PRODUCTS</h1>
+  </div>
     <div class="card-grid">
       <div  class="card" *ngFor="let x of product" (click)="goToDetails()">
         <img src="" alt="" class="card-img">
         <div class="card-body">
           <h5 class="card-title"> product name {{x.name}} </h5>
-          <p class="card-price">₹ rate {{x.price}} </p>
+          <p class="card-price">₹  {{x.price}} </p>
           <p class="card-discount">10% off</p>
           <button class="btn btn-primary">hot deal</button>
         </div>

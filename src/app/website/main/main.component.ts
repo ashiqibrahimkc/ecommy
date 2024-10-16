@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatDialog } from "@angular/material/dialog";
+import { ProfileComponent } from '../profile/profile.component';
+
 
 @Component({
   selector: 'app-main',
@@ -9,7 +12,13 @@ import { Router } from '@angular/router';
 export class MainComponent {
   isvisible:boolean=false
 
-  constructor(private router:Router){}
+  constructor(private router:Router,private dialoge:MatDialog){}
+  openprofile(){
+    this.dialoge.open(ProfileComponent,{
+      width:'800px',
+      disableClose:true
+    })
+  }
 showmenu(){
   this.isvisible=true
 }
