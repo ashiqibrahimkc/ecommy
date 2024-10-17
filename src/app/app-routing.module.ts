@@ -6,15 +6,17 @@ import { VendorloginComponent } from "./vendors/vendorlogin/vendorlogin.componen
 import { VendorsignupComponent } from "./vendors/vendorsignup/vendorsignup.component";
 import { VendorComponent } from "./vendors/vendor/vendor.component";
 import { VendorhomeComponent } from "./vendors/vendorhome/vendorhome.component";
-import { AddproductComponent } from "./vendors/addproduct/addproduct.component";
-import { CategoryComponent } from "./vendors/category/category.component";
-import { CustomersComponent } from "./vendors/customers/customers.component";
+
 import { MainComponent } from "./website/main/main.component";
 import { HomeComponent } from "./website/home/home.component";
 import { ProductComponent } from "./website/product/product.component";
 import { CartComponent } from "./website/cart/cart.component";
 import { ProductdetailsComponent } from "./website/productdetails/productdetails.component";
 import { ProfileComponent } from "./website/profile/profile.component";
+import { CategoriesComponent } from "./website/categories/categories.component";
+import { ProductsComponent } from "./vendors/products/products.component";
+import { ProductStatusComponent } from "./vendors/product-status/product-status.component";
+import { OrderManagementComponent } from "./vendors/order-management/order-management.component";
 
 const route:Routes=[
     {path:'',redirectTo:"login",pathMatch:'full'},
@@ -23,14 +25,15 @@ const route:Routes=[
     {path:"vendorlogin",component:VendorloginComponent},
     {path:"vendorsignup",component:VendorsignupComponent},
     {path:'',component:VendorComponent,children:[
-        {path:'vendor',component:VendorhomeComponent},
-        {path:'addproduct',component:AddproductComponent},
-        {path:'addcategory',component:CategoryComponent},
-        {path:'customers',component:CustomersComponent}
+        {path:'dashbord',component:VendorhomeComponent},
+        {path:'products',component:ProductsComponent},
+        {path:'product-status',component:ProductStatusComponent},
+        {path:'order',component:OrderManagementComponent}
     ]},
     {path:'',component:MainComponent,children:[
         {path:'home',component:HomeComponent},
         {path:'product',component:ProductComponent},
+        {path:'categories',component:CategoriesComponent},
         {path:'cart',component:CartComponent},
         {path:'details',component:ProductdetailsComponent}
     ]}

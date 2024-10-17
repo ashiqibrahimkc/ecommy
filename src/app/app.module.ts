@@ -14,10 +14,9 @@ import { ProductdetailsComponent } from './website/productdetails/productdetails
 import { VendorloginComponent } from './vendors/vendorlogin/vendorlogin.component';
 import { VendorsignupComponent } from './vendors/vendorsignup/vendorsignup.component';
 import { VendorComponent } from './vendors/vendor/vendor.component';
-import { CategoryComponent } from './vendors/category/category.component';
+
 import { VendorhomeComponent } from './vendors/vendorhome/vendorhome.component';
-import { CustomersComponent } from './vendors/customers/customers.component';
-import { AddproductComponent } from './vendors/addproduct/addproduct.component';
+
 import { ProfileComponent } from './website/profile/profile.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,8 +24,13 @@ import { EditComponent } from './website/edit/edit.component';
 import { AddprofileComponent } from './website/addprofile/addprofile.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-
-
+import { CategoriesComponent } from './website/categories/categories.component';
+import { ProductsComponent } from './vendors/products/products.component';
+import { ProductStatusComponent } from './vendors/product-status/product-status.component';
+import { OrderManagementComponent } from './vendors/order-management/order-management.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,13 +44,14 @@ import {MatInputModule} from '@angular/material/input';
     ProductComponent,
     ProductdetailsComponent,
     VendorComponent,
-    CategoryComponent,
     VendorhomeComponent,
-    CustomersComponent,
-    AddproductComponent,
     ProfileComponent,
     EditComponent,
-   AddprofileComponent
+   AddprofileComponent,
+   CategoriesComponent,
+   ProductsComponent,
+   ProductStatusComponent,
+   OrderManagementComponent
   ],
   imports: [
     BrowserModule,
@@ -56,8 +61,10 @@ import {MatInputModule} from '@angular/material/input';
     HttpClientModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule
-    
+    MatInputModule,
+    MatButtonToggleModule,
+    MatPaginatorModule,
+    MatTableModule
   ],
   providers: [
     provideAnimationsAsync()

@@ -15,7 +15,7 @@ export class MainComponent {
   constructor(private router:Router,private dialoge:MatDialog){}
   openprofile(){
     this.dialoge.open(ProfileComponent,{
-      width:'800px',
+      width:'500px',
       disableClose:true
     })
   }

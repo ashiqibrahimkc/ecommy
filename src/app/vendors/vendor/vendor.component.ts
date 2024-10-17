@@ -7,16 +7,8 @@ import { Router } from '@angular/router';
   styleUrl: './vendor.component.css'
 })
 export class VendorComponent {
-  constructor(private router:Router){}
+  constructor(public router:Router){}
 
-oncategory(){
-  this.router.navigate(['/addcategory']);
-}
-onproduct(){
-  this.router.navigate(['/addproduct']);
-}
-onorder(){
-  this.router.navigate(['/customers']);
-}
+
 
 }

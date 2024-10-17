@@ -1,14 +1,63 @@
 <div class="main">
-    <div class="nav-main">
-      <div class="nav">
-          <div class="logo">ecommy</div>
-          <div class="list">
-              <div class="product" (click)="onproduct()">Product</div>
-              <div class="category" (click)="oncategory()">Category</div>
-              <div class="orders" (click)="onorder()">orders</div>
-          </div>
+  <div class="nav">
+    <div class="header">
+      <div class="name">
+        <i class="fa fa-globe" aria-hidden="true"></i>
+        <h2>Vendor</h2>
+      </div>
+      <div class="search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" placeholder="search products.....">
+      </div>
+      <div class="user">
+        <i class="fa fa-user-secret" aria-hidden="true"></i>
       </div>
     </div>
-    <router-outlet></router-outlet>
   </div>
+  <div class="main-details">
+    <div class="left">
+      <div class="left-main">
+        <ul class="ul">
+          <li class="main-sub" [ngClass]="{'active': router.url ==='/dashbord'}" routerLink="/dashbord">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>DashBord</span>
+          </li>
+          <li class="hover" [ngClass]="{'active': router.url ==='/products'||router.url==='/product-status'}">
+            <div class="main-sub">
+              <i class="fa fa-cube" aria-hidden="true"></i>
+            <span>Product Management</span>
+            </div>
+            <ul class="submenu">
+              <li routerLink="/products">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <span>View</span>
+              </li>
+              <li routerLink="/product-status">
+                <i class="fa fa-hourglass-o" aria-hidden="true"></i>
+                <span>Status</span>
+              </li>
+            </ul>
+          </li>
+          <li class="main-sub" [ngClass]="{'active': router.url ==='/order'}" routerLink="/order">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            <span>Order Management</span>
+          </li>
+         <div class="last">
+          <li class="main-sub">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span>Settings</span>
+          </li>
+          <li class="main-sub" routerLink="">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <span>logout</span>
+          </li>
+         </div>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
   

@@ -3,15 +3,63 @@
   <div class="products">
     <h1>PRODUCTS</h1>
   </div>
-    <div class="card-grid">
-      <div  class="card" *ngFor="let x of product" (click)="goToDetails()">
-        <img src="" alt="" class="card-img">
-        <div class="card-body">
-          <h5 class="card-title"> product name {{x.name}} </h5>
-          <p class="card-price">₹  {{x.price}} </p>
-          <p class="card-discount">10% off</p>
-          <button class="btn btn-primary">hot deal</button>
+   <div class="main">
+    <div class="border">
+      <div class="head">
+        <h1>OFFER PRODUCT</h1>
+      </div>
+      <div class="card-grid">
+        <div  class="card" *ngFor="let x of productlist" (click)="goToDetails()">
+          <img src="" alt="" class="card-img">
+          <div class="card-body">
+            <h5 class="card-title"> product name {{x.name}} </h5>
+            <p class="card-price">₹  {{x.price}} </p>
+            <p class="card-discount">10% off</p>
+            <button class="btn btn-primary">hot deal</button>
+          </div>
         </div>
       </div>
+      <div class="button">
+        <p (click)="show()">{{ more ? 'showless' : 'showmore' }}</p>
+      </div>
     </div>
+    <div class="border">
+      <div class="head">
+        <h1>5G PRODUCT</h1>
+      </div>
+      <div class="card-grid">
+        <div  class="card" *ngFor="let x of productlist1" (click)="goToDetails()">
+          <img src="" alt="" class="card-img">
+          <div class="card-body">
+            <h5 class="card-title"> product name {{x.name}} </h5>
+            <p class="card-price">₹  {{x.price}} </p>
+            <p class="card-discount">10% off</p>
+            <button class="btn btn-primary">hot deal</button>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <p (click)="show1()">{{ more ? 'showless' : 'showmore' }}</p>
+      </div>
+    </div>
+    <div class="border">
+      <div class="head">
+        <h1>MOVING PRODUCT</h1>
+      </div>
+      <div class="card-grid">
+        <div  class="card" *ngFor="let x of productlist2" (click)="goToDetails()">
+          <img src="" alt="" class="card-img">
+          <div class="card-body">
+            <h5 class="card-title"> product name {{x.name}} </h5>
+            <p class="card-price">₹  {{x.price}} </p>
+            <p class="card-discount">10% off</p>
+            <button class="btn btn-primary">hot deal</button>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <p (click)="show2()">{{ more ? 'showless' : 'showmore' }}</p>
+      </div>
+    </div>
+   </div>
   </div>

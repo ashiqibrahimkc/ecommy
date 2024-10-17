@@ -30,3 +30,8 @@ i{
     font-size: 30px;
     cursor: pointer;
 }
+p i{
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+}

@@ -29,7 +29,7 @@ onLogin(){
 var add =this.signinForm.value;
 console.log(add)
 if(this.user.email==='vendor@gmail.com'&&this.user.password==='vendor123'){
-  this.router.navigate(['/vendor'])
+  this.router.navigate(['/dashbord'])
 }else{
   window.alert("your data is invalid")
   this.signinForm.reset()

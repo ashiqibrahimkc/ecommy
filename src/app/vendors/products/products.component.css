@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ----------buttons------ */
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    text-decoration: underline;    
+}
+.main{
+    width: 100%;
+    padding: 3%5%;
+}
+.search{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.search i{
+    position: absolute;
+    left: 10px;
+    color: rgb(218, 217, 217);
+    font-weight: 700;
+    font-size: 15px;
+}
+.search input{
+    padding-left: 30px;
+    width: 500px;
+    height: 40px;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+}

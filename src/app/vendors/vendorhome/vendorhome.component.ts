@@ -9,13 +9,5 @@ import { Router } from '@angular/router';
 export class VendorhomeComponent {
   constructor(private router:Router){}
 
-  oncategory(){
-    this.router.navigate(['/addcategory']);
-  }
-  onorder(){
-    this.router.navigate(['/customers']);
-  }
-  onproduct(){
-    this.router.navigate(['/addproduct']);
-  }
+
 }
